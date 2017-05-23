@@ -46,9 +46,10 @@ class Init extends Migrator
         $tokens->create();
 
         $joins = $this->table("joins");
-        $joins->addColumn("tokenId", "biginteger");
-        $joins->addColumn("clientId", "string");
-        $joins->addColumn("random", "string");
+        $joins->addColumn("clientKey", "string");
+        $joins->addColumn("uuid", "string"); // player's uuid, copied here
+        $joins->addColumn("userId", "biginteger"); // player's internal id, copied here
+        $joins->addColumn("random", "string"); // sending from server
         $joins->addColumn("create_time", "biginteger");
     }
 }

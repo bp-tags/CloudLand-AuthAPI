@@ -13,7 +13,7 @@ class JoinServer extends Model {
     protected $autoWriteTimestamp = true;
     protected $updateTime = false;
 
-    public function token(){
-        return $this->belongsTo("AuthenticationToken", "tokenId");
+    public function user(){
+        return $this->belongsTo("User", "userId");
     }
 }

@@ -15,6 +15,11 @@ class AuthenticationToken extends Model {
     }
 
     public function getExpiredAttr(){
-
+        $upd = $this->update_time;
+        if(time() > $upd + (60*60*24*7)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -4,8 +4,10 @@
 namespace cloudland\common;
 
 
+use think\response\Json;
+
 class Helper {
-    public static function json($ok, $message, $data = []) {
+    public static function json($ok, $message = "", $data = []) {
         $status = null;
         if($ok === true) {
             $status = "ok";
@@ -14,6 +16,6 @@ class Helper {
         } else {
             $status = $ok;
         }
-        return array_merge(["status" => $status, "message" => $message], $data);
+        return new Json(array_merge(["status" => $status, "message" => $message], $data));
     }
 }
