@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cloudland\common;
+namespace app\common;
 
 
 use think\response\Json;

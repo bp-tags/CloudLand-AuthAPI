@@ -1,11 +1,11 @@
 <?php
 
 
-namespace cloudland\auth\controller;
+namespace app\auth\controller;
 
-use cloudland\common\Helper;
-use cloudland\common\model\AuthenticationToken;
-use cloudland\common\model\JoinServer;
+use app\common\Helper;
+use app\common\model\AuthenticationToken;
+use app\common\model\JoinServer;
 use think\Controller;
 
 class Join extends Controller {

@@ -1,5 +1,5 @@
 <?php
-namespace cloudland\index\controller;
+namespace app\index\controller;
 
 class Index
 {

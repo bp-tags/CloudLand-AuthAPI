@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cloudland\common\model;
+namespace app\common\model;
 
 
 use think\Model;

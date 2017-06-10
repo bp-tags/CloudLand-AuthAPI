@@ -1,12 +1,12 @@
 <?php
 
 
-namespace cloudland\auth\controller;
+namespace app\auth\controller;
 
 
-use cloudland\common\Helper;
-use cloudland\common\model\AuthenticationToken;
-use cloudland\common\model\User;
+use app\common\Helper;
+use app\common\model\AuthenticationToken;
+use app\common\model\User;
 use think\Controller;
 use think\response\Json;
 use think\Validate;
